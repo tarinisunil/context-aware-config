@@ -6,6 +6,6 @@ import org.apache.sling.caconfig.annotation.Property;
 @Configuration(label = "Cntxtaware Project Sling Context Aware Configuration", description = "Cntxtaware Project Sling Context Aware Configuration")
 public @interface CntxtConfig {
 
-	 @Property(label = "Admin Email Address", description = "This property contains the value of Admin Email")
-	    String adminemail();
+	 @Property(label = "token", description = "This property contains the value of token")
+	    String token();
 }
