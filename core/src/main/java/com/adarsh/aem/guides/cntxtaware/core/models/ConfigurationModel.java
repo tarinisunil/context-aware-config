@@ -34,8 +34,8 @@ public class ConfigurationModel {
 				ConfigurationBuilder configurationBuilder = contentResource.adaptTo(ConfigurationBuilder.class);
 				if (configurationBuilder != null) {
 					CntxtConfig myProjeCAConfig = configurationBuilder.as(CntxtConfig.class);
-					String adminEmail = myProjeCAConfig.adminemail();
-					message = adminEmail;
+					String token = myProjeCAConfig.token();
+					message = token;
 
 				}
 			}
